@@ -12,14 +12,14 @@ server = pymongo.MongoClient("mongodb://localhost:27000/")
 database = server["SV"]
 table = database[datetime.date.today().strftime("%Y.%m.%d")]
 
-app = Flast(__name__)
+app = Flaskk(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 
 def homepage():
 
 
-return Response(status=200)
+#return Response(status=200)
 
 
 if __name__ == '__main__':
