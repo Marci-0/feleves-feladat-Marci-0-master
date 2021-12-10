@@ -8,8 +8,8 @@ from src import Polynomial
 
 
 
-server = pymongo.MongoClient("mongodb://localhost:27017/")
-database = server["Locipulzus"]
+server = pymongo.MongoClient("mongodb://localhost:27000/")
+database = server["SV"]
 table = database[datetime.date.today().strftime("%Y.%m.%d")]
 
 app = Flast(__name__)
